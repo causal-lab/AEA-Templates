@@ -7,7 +7,7 @@ This Quarto format will help you create documents for journals published by the 
 You can use this as a template to create an article for one of the AEA journals. To do this, use the following command:
 
 ```bash
-quarto use template <gh-org>/potential-fishstick
+quarto use template causal-lab/AEA-Templates
 ```
 
 This will install the extension and create an example qmd file and bibliography that you can use as a starting place for your article.
@@ -17,7 +17,7 @@ This will install the extension and create an example qmd file and bibliography 
 You may also use this format with an existing Quarto project or document. From the quarto project or document directory, run the following command to install this format:
 
 ```bash
-quarto add <gh-org>/potential-fishstick
+quarto add causal-lab/AEA-Templates
 ```
 
 ## Usage

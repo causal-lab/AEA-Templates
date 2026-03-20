@@ -4,6 +4,7 @@ short-title: "Short Title"
 format:
   aea-pdf:
     keep-tex: true
+  aea-html: default
     # Journal options: AER (default), PP, JEL, JEP, AEJ
     # classoption: [AER]
     # Draft mode: add draftmode or reviewmode to classoption

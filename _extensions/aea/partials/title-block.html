@@ -1,0 +1,39 @@
+<div class="aea-title-block">
+  $if(title)$
+  <h1 class="title">$title$</h1>
+  $endif$
+
+  $if(by-author)$
+  <div class="aea-authors">
+    <p class="author-names">By $for(by-author)$$it.name.literal$$sep$ and $endfor$</p>
+    <div class="author-details">
+      $for(by-author)$
+      <p class="author-detail">
+        <span class="author-name">$it.name.literal$</span>$if(it.affiliations)$: $for(it.affiliations/first)$$it.name$$endfor$$endif$$if(it.email)$ (<a href="mailto:$it.email$">$it.email$</a>)$endif$
+      </p>
+      $endfor$
+    </div>
+  </div>
+  $endif$
+
+  $if(acknowledgements)$
+  <div class="aea-acknowledgements">
+    <p>$acknowledgements$</p>
+  </div>
+  $endif$
+
+  $if(abstract)$
+  <div class="aea-abstract">
+    <p>$abstract$</p>
+  </div>
+  $endif$
+
+  <div class="aea-metadata">
+    $if(jel)$
+    <p class="aea-jel"><strong>JEL:</strong> $jel$</p>
+    $endif$
+    $if(keywords)$
+    <p class="aea-keywords"><strong>Keywords:</strong> $for(keywords)$$it$$sep$, $endfor$</p>
+    $endif$
+  </div>
+</div>

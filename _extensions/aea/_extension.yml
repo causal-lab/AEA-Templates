@@ -33,3 +33,11 @@ contributes:
         - aea.bst
         - setspace.sty
         - multicol.sty
+    html:
+      toc: true
+      number-sections: true
+      fig-width: 5.3
+      fig-height: 3.7
+      css: aea.css
+      template-partials:
+        - partials/title-block.html

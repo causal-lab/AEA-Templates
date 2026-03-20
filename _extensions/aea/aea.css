@@ -1,0 +1,97 @@
+/* AEA HTML Format Styles */
+
+body {
+  font-family: "Times New Roman", Times, Georgia, serif;
+  max-width: 45em;
+  margin: 0 auto;
+  padding: 2em;
+  line-height: 1.5;
+}
+
+/* Title Block */
+.aea-title-block {
+  margin-bottom: 2em;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1.5em;
+}
+
+.aea-title-block .title {
+  text-align: center;
+  font-size: 1.6em;
+  margin-bottom: 0.8em;
+}
+
+.aea-authors {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.aea-authors .author-names {
+  font-variant: small-caps;
+  font-size: 1.1em;
+  margin-bottom: 0.5em;
+}
+
+.aea-authors .author-details {
+  font-size: 0.9em;
+  color: #444;
+}
+
+.aea-authors .author-detail {
+  margin: 0.15em 0;
+}
+
+.aea-acknowledgements {
+  font-size: 0.85em;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 1em;
+}
+
+.aea-abstract {
+  margin: 1em 2em;
+  font-size: 0.95em;
+}
+
+.aea-abstract::before {
+  content: "Abstract";
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0.3em;
+}
+
+.aea-metadata {
+  font-size: 0.9em;
+  margin-top: 1em;
+}
+
+.aea-metadata p {
+  margin: 0.2em 0;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Times New Roman", Times, Georgia, serif;
+}
+
+h1 {
+  font-size: 1.3em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.1em;
+  font-style: italic;
+}
+
+/* References section */
+#references::before,
+div.references::before {
+  content: none;
+}
+
+#references {
+  font-size: 0.95em;
+}

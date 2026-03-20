@@ -1,0 +1,5 @@
+latex_template
+__MACOSX
+*.md
+LICENSE
+.github

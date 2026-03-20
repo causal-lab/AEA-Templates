@@ -1,0 +1,57 @@
+---
+title: "Title of Your Article"
+short-title: "Short Title"
+format:
+  aea-pdf:
+    keep-tex: true
+    # Journal options: AER (default), PP, JEL, JEP, AEJ
+    # classoption: [AER]
+    # Draft mode: add draftmode or reviewmode to classoption
+    # classoption: [AER, draftmode]
+    # draft-spacing: 1.5
+    # For PP journal, add to header:
+    # include-in-header:
+    #   text: |
+    #     \usepackage{mathptmx}
+author:
+  - name: Jane Doe
+    affiliations:
+      - name: University One
+    email: doe@example.com
+  - name: John Smith
+    affiliations:
+      - name: University Two
+    email: smith@example.com
+acknowledgements: "Acknowledgements go here."
+date: today
+pub-month: Month
+pub-year: Year
+pub-volume: Vol
+pub-issue: Issue
+jel: "D72, D78"
+keywords:
+  - Keyword 1
+  - Keyword 2
+abstract: |
+  Your abstract goes here. This should briefly describe the main findings
+  of your research.
+bibliography: bibliography.bib
+---
+
+Your introductory material goes here, before the first section heading.
+Do not use an "Introduction" heading for AER and AEJ journals.
+
+# First Section in Body
+
+Your content here. Use citations like @angrist2010 or
+\citet{angrist2010} for in-text and \citep{angrist2010} for
+parenthetical references.
+
+## Subsection
+
+Subsection content. Equations work as usual:
+
+$$
+Y_i = \alpha + \beta X_i + \varepsilon_i
+$$
+

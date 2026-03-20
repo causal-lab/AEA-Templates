@@ -1,0 +1,42 @@
+$if(title)$
+\title{$title$}
+$endif$
+$if(short-title)$
+\shortTitle{$short-title$}
+$endif$
+$if(by-author)$
+\author{$for(by-author)$$it.name.literal$$sep$ and $endfor$%
+\thanks{$for(by-author)$$it.name.family$%
+$if(it.affiliations)$: $for(it.affiliations/first)$$it.name$$endfor$$endif$%
+$if(it.email)$ ($it.email$)$endif$%
+$sep$; $endfor$%
+$if(acknowledgements)$. $acknowledgements$$endif$}}
+$endif$
+\date{$if(date)$$date$$else$\today$endif$}
+$if(pub-month)$
+\pubMonth{$pub-month$}
+$endif$
+$if(pub-year)$
+\pubYear{$pub-year$}
+$endif$
+$if(pub-volume)$
+\pubVolume{$pub-volume$}
+$endif$
+$if(pub-issue)$
+\pubIssue{$pub-issue$}
+$endif$
+
+$if(jel)$
+\JEL{$jel$}
+$endif$
+$if(keywords)$
+\Keywords{$for(keywords)$$it$$sep$, $endfor$}
+$endif$
+
+$if(abstract)$
+\begin{abstract}
+$abstract$
+\end{abstract}
+$endif$
+
+\maketitle

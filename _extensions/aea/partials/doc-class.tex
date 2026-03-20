@@ -1,0 +1,8 @@
+$-- AEA document class
+$-- Prevent amsmath option clash (AEA.cls loads it with leqno)
+\PassOptionsToPackage{leqno}{amsmath}
+\documentclass[%
+$for(classoption)$
+  $classoption$$sep$,%
+$endfor$
+]{$documentclass$}

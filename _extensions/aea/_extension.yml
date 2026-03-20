@@ -1,0 +1,35 @@
+title: American Economic Association
+author: AEA
+version: 1.0.0
+quarto-required: ">=1.4.0"
+contributes:
+  formats:
+    pdf:
+      documentclass: AEA
+      classoption: [AER]
+      pdf-engine: pdflatex
+      cite-method: natbib
+      biblio-style: aea
+      toc: false
+      lof: false
+      lot: false
+      number-sections: true
+      block-headings: false
+      has-frontmatter: false
+      indent: true
+      colorlinks: true
+      linkcolor: black
+      citecolor: black
+      urlcolor: black
+      fig-width: 5.3
+      fig-height: 3.7
+      template-partials:
+        - partials/doc-class.tex
+        - partials/title.tex
+        - partials/before-body.tex
+      biblio-title: REFERENCES
+      format-resources:
+        - AEA.cls
+        - aea.bst
+        - setspace.sty
+        - multicol.sty
